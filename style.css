@@ -1,78 +1,180 @@
 *{
-    margin: 0;
     padding: 0;
-    font-family: Arial;
+    margin: 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.container{
-    width: 500px;
-    background-color: #fff;
-    margin: 30% auto;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px #a1a1a1;
+body{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    background-color: #343434;
+    overflow: hidden;
 }
-.header{
-    text-align: center;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 25px;
-}
-.input{
-    outline: none;
-    padding: 10px;
-    margin-bottom: 10px;
+.flex-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     width: 100%;
-    border-radius: 5px;
-    border:1px solid #c7c7c7;
-    display: block;
 }
-label{
-    display: block;
-    font-size: 14px;
-    font-weight: 500;
-}
-#remember{
-    display: inline;
+.list-container{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
 }
 
-#submit{
-    outline: none;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none !important;
-    border-radius: 5px;
-    cursor: pointer !important;
-    width: 100%;
-    text-align: center;
-    display: block;
-    font-weight: bold;
-    font-size: 17px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    transition: 0.3s ease-in-out;
+.list-container>li {
+    margin-right: 10px;
+    list-style-type: none;
+    font-size: small;
+    cursor: pointer;
 }
-form{
-    width: 70%;
+.image-container{
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: #8c8c8c;
+}
+.image-item{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.body-title{
+    font-size: 65px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.icon{
     margin: auto;
 }
-.button{
-    background-color: #495049;
-    width: 90%;
-    color: #fff;
-    padding: 10px 20px;
-    display: block;
+
+.search-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-options>div{
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #242424;
     border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: small;
     transition: 0.3s ease-in-out;
 }
 
-#submit:hover{
-    background-color: #45a049;
+.search-options>div:hover{
+    background-color: #4c4c4c;
 }
-.button:hover{
-    background-color: #212121;
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.lang{
+    margin-left: 10px !important;
+    font-size: 14px;
+    color: #0062e1;
+    cursor: pointer;
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border: 2px solid #8c8c8c;
+    padding: 3px 25px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+#search-input {
+    padding: 0;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 300px;
+    height: 45px;
+    background-color: transparent;
+}
+
+.header{
+    display: flex;
+    align-self: flex-start;
+    width: 100vw;
+    justify-content: end;
+}
+.main-content{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+    padding: 20px;
+}
+.footer{
+    background: #252525;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.country{
+    padding: 10px;
+    border-bottom: 1px solid #6b6a6a;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.bottom-links{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.bottom-links>div>a{
+    margin-right: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.bottom-links>div>a:hover{
+    text-decoration: underline;
+}
+.policy{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.policy:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .bottom-links{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bottom-links{
+        flex-direction: column;
+    }
+    .bottom-links>div{
+        margin-top: 10px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {}

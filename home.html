@@ -1,25 +1,66 @@
 <html>
     <head>
-        <title>Login Page</title>
+        <title>
+            SearchEngine
+        </title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="container">
-            <h1 class="header">Login</h1>
-            <form>
-                <label for="username">Username</label>
-                <input class="input" type="text" id="username" name="username" placeholder="Username" autocomplete="off" />
-                <label for="password">Password</label>
-                <input class="input" type="password" id="password" name="password" placeholder="Password" autocomplete="off" />
-                
+        <div class="flex-body">
+            <div class="header">
+                <nav>
+                    <ul class="list-container">
+                        <li>Mail</li>
+                        <li>Calendar</li>
+                        <li>Images</li>
+                        <li class="image-container">
+                            <img src="catPic5.jpg" alt="displayPhoto" class="image-item">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <main class="main-content">
                 <div>
-                    <input type="checkbox" id="save" name="save" />
-                    <label for="save" id="remember">Remember Me</label>
+                    <h1 class="body-title">Google</h1>
+                    <form class="search-box">
+                        <img src="find.png" class="icon" width="25" height="25" alt="search icon">
+                        <input type="text" autofocus id="search-input" placeholder="Search...">
+                        <img src="pencil.png" class="icon" width="25" height="25" alt="Edit">
+                        <button type="submit" hidden>Search</button>
+                    </form>
+                    <div class="search-options">
+                        <div>Google Search</div>
+                        <div>I'm feeling Lucky</div>
+                    </div>
+                    <div class="flex-container">
+                        <div style="font-size:14px;font-weight: 500;">Google offered in: </div>
+                        <div class="lang">English</div>
+                        <div class="lang">Spanish</div>
+                        <div class="lang">French</div>
+                        <div class="lang">Portuguese</div>
+                    </div>
                 </div>
-                <input type="submit" id="submit" value="Login" />
-
-                <a href="register.html" class="button">Register</a>
-            </form>
+            </main>
+            <div>
+                <div class="footer">
+                    <div class="country">Nigeria</div>
+                    <div class="flex-container policy">Our third decade of climate action: <span>join us</span></div>
+                    <div class="flex-container justify-around bottom-links">
+                        <div>
+                            <a href="#">About</a>
+                            <a href="#">Advertising</a>
+                            <a href="#">Business</a>
+                            <a href="#">How Search works</a>
+                            <a href="#">Privacy</a>
+                        </div>
+                        <div>
+                            <a href="#">Terms</a>
+                            <a href="#">Settings</a>
+                            <a href="#">Help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
